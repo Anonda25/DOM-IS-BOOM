@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Summary </title>
+</head>
+<body>
+     <h1>Failan DOM Event Handers</h1>
+
+     <h1 id="hendler-evener">Default Text</h1>
+     <h1 id="hendler-evener2">Default Text</h1>
+
+     <button onclick="eventHendlers()">Handelrs Event By add onclick Function</button>
+
+     <script>
+
+        function eventHendlers(){
+            const hendlersEvent = document.getElementById("hendler-evener");
+            hendlersEvent.innerText = " The hendlers of Event Hendlers";
+            const eventHendler = document.getElementById('hendler-evener2');
+            eventHendler.innerText = "this is a good practise"
+
+            const allEvent = hendlersEvent + eventHendler;
+        }
+     </script>
+</body>
+</html>
